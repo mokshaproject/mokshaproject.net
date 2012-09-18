@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Moksha Project</title>
+
+<script type="text/JavaScript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/JavaScript" src="js/slimbox2.js"></script>
+<script type="text/JavaScript" src="js/cloud-carousel.1.0.5.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+  $("#moksha-screenshot-carousel").CloudCarousel( { 
+    minScale: 0.45,
+    reflHeight: 23,
+    reflGap:0,
+    xRadius: 400,
+    yRadius:25,
+    xPos: 200,
+    yPos: 120,
+    speed:0.05,
+    mouseWheel: false,
+    autoRotate: 'right',
+    autoRotateDelay: 7500,
+  });
+  $("#moksha-screenshot-carousel").css({"overflow":"visible"}).fadeIn();
+  
+});
+</script>
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/text.css" />
+<link rel="stylesheet" href="css/960.css" />
+<link rel="stylesheet" href="css/moksha-website.css" />
+<link rel="stylesheet" href="css/slimbox2.css" />
+
+<link rel="shortcut icon" href="img/favicon.png" />
+</head>
+<body>
+<div class="container_16">
+  <div id="header">
+    <div class="grid_6" id="logo">
+        <h1>
+            <a href="http://mokshaproject.net"><img src="img/moksha-logo.png" alt="Moksha"></a>
+        </h1>
+    </div>
+    <div class="grid_10 nav">
+        <ul>
+            <li><a href="#">Download</a></li>
+            <li><a href="http://mokshaproject.net/apps/docs/index.html">Documentation</a></li>
+            <li><a href="https://fedorahosted.org/moksha/">Wiki</a></li>
+            <li><a href="https://fedorahosted.org/mailman/listinfo/moksha">Mailing List</a></li>
+            <li><a href="http://webchat.freenode.net/?channels=moksha&uio=d4">IRC / Chat</a></li>
+        </ul>
+    </div>
+        <div class="grid_16">
+        <h2>A web framework for highly-interactive, realtime apps.</h2>
+      </div>
+
+      <div id="moksha-screenshot-carousel">
+        <a href="img/moksha-screenshot-sine-of-the-times.gif"
+        rel='lightbox' title="Using Moksha with TurboGears2">
+        <img class="cloudcarousel"
+        src="img/moksha-screenshot-sine-of-the-times-thumbnail.gif"
+        width="380" height="294"
+        alt="Using Moksha with TurboGears2"
+        title="Using Moksha with TurboGears2"
+      </a>
+      <a href="img/moksha-screenshot-dashboard.gif"
+        rel='lightbox' title="The Moksha dashboard demo">
+        <img class="cloudcarousel"
+        src="img/moksha-screenshot-dashboard-thumbnail.gif"
+        width="380" height="294"
+        alt="The Moksha dashboard demo"
+        title="The Moksha dashboard demo" />
+      </a>
+      <a href="img/moksha-screenshot-narcissus.gif"
+        rel='lightbox' title="Narcissus is a server-log visualization app built with moksha">
+        <img class="cloudcarousel"
+        src="img/moksha-screenshot-narcissus-thumbnail.gif"
+        width="380" height="294"
+        alt="Narcissus is a server-log visualization app built with moksha"
+        title="Narcissus is a server-log visualization app built with moksha" />
+      </a>  
+      <div id="moksha-screenshot-title"></div>
+      <div id="moksha-screenshot-alt" ></div>
+    </div>
+    <div id="carousel-spacer">&nbsp;</div>
+  </div>
+  <div id="page">
+    <div class="grid_10" id="content">
+        <h2>What is Moksha?</h2>
+        <!-- add 2x2 grid here -->
+        <div class="alpha grid_5">  
+            <h3>A Platform</h3>
+            <p>Moksha is a highly-scalable platform for creating dashboards of live widgets. Moksha makes it simple for these widgets to extract and extend data from arbitrary resources.</p>
+        </div>
+        <div class="omega grid_5">
+            <h3>An Architecture</h3>
+            <p>Moksha brings existing technologies together to create a next-generation web architecture that is designed to simplify the creation of create rich, live web applications that can easily bridge existing services.</p>
+        </div>
+        <div class="alpha grid_5">
+            <h3>A Framework</h3>
+            <p>Built using best-of-breed components, Moksha applications are written using stable pre-existing modules that allow for the rapid creation of powerful applications.</p>
+        </div>
+        <div class="omega grid_5">
+            <h3>A Messaging Hub</h3>
+            <p>Moksha acts as real-time messaging middleware for your web application, allowing you to publish and subscribe to message queues both on server and from the clients web browser.</p>
+        </div>
+                
+        <h2>Features</h2>
+        <div class="alpha grid_5">
+            <ul>
+                <li>Free &amp; Open Source</li>
+                <li>Utilizes by Open Standards</li>
+                <li>Comprehensive WSGI middleware stack</li>
+                <li>Plugin-driven architecture</li>
+                <li>Live widget API</li>
+                <li>Supports 100% AMQP from the browser to the broker</li>
+                <li>Low-latency browser socket</li>
+            </ul>
+        </div>
+
+        <div class="omega grid_5">
+            <ul>
+                <li>Messaging hub that can integrate with an AMQP broker</li>
+                <li>Message producer/consumer API</li>
+                <li>Scalable architecture</li>
+                <li>External resource connectors</li>
+                <li>Dynamic extension points</li>
+                <li>Dashboard creation API</li>
+                <li>Leverages the power of TurboGears2</li>
+            </ul>
+        </div>
+        <h2>Architecture</h2>
+        <div class="grid_10">
+         <a href="http://mokshaproject.net/apps/docs/main/Architecture.html"><img src="img/moksha-architecture.png" alt="Architecture diagram for Moksha"/></a>
+            <ul>
+                <li class="web-doc"><a href="http://mokshaproject.net/apps/docs/main/Architecture.html">Full architecture documentation</a> is available.</li>
+            </ul>
+        </div>
+        
+        <h2>Demo Site</h2>
+        <div class="grid_10">
+        <p>View a demo of Moksha in action: <a href="http://mokshaproject.net/">http://mokshaproject.net/</a></p>
+        </div>
+    </div>
+    <div class="grid_6" id="sidebar">
+    <h2 id="download"><a href="#">Download Now</a></h2>
+
+        <h3>Supported Platforms</h3>
+        <p>Moksha has been tested on Fedora/RHEL, Ubuntu/Debian and OSX. However, since it's written in Python it should be able to work on almost all platforms.</p>
+
+        <h3>Different ways to use Moksha</h3>
+        <ul>
+            <li class="doc"><a href="http://mokshaproject.net/apps/docs/main/UsingLiveSocketOutsideOfMoksha.html">Bringing real-time functionality to your existing site</a></li>
+            <li class="doc"><a href="http://mokshaproject.net/apps/docs/main/IntegratingWithTG2.html">As middleware in a TurboGears2 application</a></li>
+            <li class="doc"><a href="http://mokshaproject.net/apps/docs/main/GettingStarted.html">Running your apps and widgets inside of Moksha</a></li>
+        </ul>
+
+        <h3>Getting Started</h3>
+        <ul>
+            <li class="doc"><a href="http://mokshaproject.net/apps/docs/main/GettingStarted.html">Installation Instructions</a></li>
+            <li class="doc"><a href="http://mokshaproject.net/apps/docs/main/HelloWorld.html">Hello World Demo</a></li>
+            <li class="doc"><a href="http://mokshaproject.net/apps/docs/index.html">Documentation</a></li>
+            <li class="web-doc"><a href="https://fedorahosted.org/moksha/wiki/FAQ">Frequently-Asked Questions</a></li>
+            <li class="web-doc"><a href="https://fedorahosted.org/moksha/report/1">Active Bug List</a></li>
+            <li class="web-doc"><a href="https://fedorahosted.org/moksha/wiki/FAQ">File a New Bug</a></li>
+        </ul>
+
+    <h2>Using with TurboGears2</h2>
+        <a href="http://mokshaproject.net/apps/docs/main/IntegratingWithTG2.html"><img src="img/quickstart-screenshot.png" alt="tutorial screenshot" /></a>
+    <p>This demo will introduce you to working with Moksha within your existing TurboGears application through building a basic example dashboard with live graphs.</p>
+
+    <h2>Join the Team</h2>
+    <p>Want to help us out?</p>
+        <h3>Codebase Summary</h3>
+        <p>Moksha's codebase is primarily written in <strong>Python</strong> and <strong>Javascript</strong>.</p>
+        <ul>
+            <li class="web-doc"><a href="http://mokshaproject.net/apps/docs/main/Architecture.html">Full architecture documentation</a> is available.</li>
+        </ul>
+
+        <h3>Technology Summary</h3>
+        <div class="grid_3 alpha">
+            <ul>
+                <li><a href="http://python.org">Python</a></li>
+                <li><a href="http://turbogears.org/">TurboGears 2</a></li>
+                <li><a href="http://pylonshq.com/">Pylons</a></li>
+                <li><a href="http://pythonpaste.org/">Paste</a></li>
+                <li><a href="http://www.wsgi.org/wsgi/">WSGI Middleware</a></li>
+                <li><a href="http://orbited.org/">Orbited</a></li>
+                <li><a href="http://amqp.org">AMQP</a>/<a href="http://qpid.apache.org/">Qpid</a></li>
+            </ul>
+        </div>
+        <div class="grid_3 omega">
+            <ul>
+                <li><a href="http://jquery.com">JQuery</a></li>
+                <li><a href="http://toscawidgets.org/">ToscaWidgets</a></li>
+                <li><a href="http://www.makotemplates.org/">Mako</a></li>
+                <li><a href="http://genshi.edgewall.org/">Genshi</a></li>
+                <li><a href="http://sqlalchemy.org">SQL Alchemy</a></li>
+                <li><a href="http://js.io/">js.io</a></li>
+                <li><a href="http://twistedmatrix.com/trac/">Twisted</a></li>
+            </ul>
+        </div>
+        <h3>Code Repository</h3>
+        <ul>
+            <li><a href="https://fedorahosted.org/moksha/browser">git://git.fedorahosted.org/git/moksha.git</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div id="footer">
+  <div class="container_16">
+    <div class="grid_16">
+        <a href="http://turbogears.org/"><img src="img/promo-button-tg.png" alt="" /></a>
+        <a href="http://python.org"><img src="img/promo-button-python.png" alt="" /></a>
+        <a href="http://www.apache.org/licenses/LICENSE-2.0.html"><img src="img/apache_license-greyscale-100px.png" alt="" /></a>
+    </div>
+    <div class="grid_16">
+        <a href="http://redhat.com"><img src="img/promo-sponsor-redhat.png" alt="Red Hat, Inc." /></a>
+        <p>Moksha is sponsored by <a href="http://redhat.com">Red Hat, Inc.</a> <br />© 2008-2010 Red Hat, Inc. and others. <br/> The Apache logo is a trademark of The Apache Software Foundation.</p>
+    </div>
+  </div>
+<div class="clear"></div>
+</div>
+</body>
+</html>
