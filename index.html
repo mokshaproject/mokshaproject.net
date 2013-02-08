@@ -118,12 +118,14 @@ $(document).ready(function(){
                 <li>Live widget API</li>
                 <li>Supports 100% AMQP from the browser to the broker</li>
                 <li>Low-latency browser socket</li>
+                <li>Can speak ØMQ pub/sub</li>
+                <li>Optional WebSocket server</li>
             </ul>
         </div>
 
         <div class="omega grid_5">
             <ul>
-                <li>Messaging hub that can integrate with an AMQP broker</li>
+                <li>Messaging hub that can integrate with an AMQP broker or ØMQ endpoints</li>
                 <li>Message producer/consumer API</li>
                 <li>Scalable architecture</li>
                 <li>External resource connectors</li>
@@ -142,7 +144,7 @@ $(document).ready(function(){
         
         <h2>Demo Site</h2>
         <div class="grid_10">
-        <p>View a demo of Moksha in action: <a href="http://mokshaproject.net/">http://mokshaproject.net/</a></p>
+        <p>View a demo of Moksha in action: <a href="http://moksha.csh.rit.edu/">http://moksha.csh.rit.edu/</a></p>
         </div>
     </div>
     <div class="grid_6" id="sidebar">
@@ -171,8 +173,7 @@ $(document).ready(function(){
         </ul>
 
     <h2>Using with TurboGears2</h2>
-        <a
-          href="http://moksha.readthedocs.org/en/latest/main/tutorials/TurboGears2"><img src="img/quickstart-screenshot.png" alt="tutorial screenshot" /></a>
+        <a href="http://moksha.readthedocs.org/en/latest/main/tutorials/TurboGears2"><img src="img/quickstart-screenshot.png" alt="tutorial screenshot" /></a>
     <p>This demo will introduce you to working with Moksha within your existing TurboGears application through building a basic example dashboard with live graphs.</p>
 
     <h2>Join the Team</h2>
@@ -192,7 +193,7 @@ $(document).ready(function(){
                 <li><a href="http://pythonpaste.org/">Paste</a></li>
                 <li><a href="http://www.wsgi.org/wsgi/">WSGI Middleware</a></li>
                 <li><a href="http://orbited.org/">Orbited</a></li>
-                <li><a href="http://amqp.org">AMQP</a>/<a href="http://qpid.apache.org/">Qpid</a></li>
+                <li><a href="http://amqp.org">AMQP</a>/<a href="http://qpid.apache.org/">Qpid</a> or <a href="http://zeromq.org">ØMQ</a></li>
             </ul>
         </div>
         <div class="grid_3 omega">
